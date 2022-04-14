@@ -1,4 +1,5 @@
-const router = require('express').Router();
+const express = require('express');
+const router = express.Router();
 const { createNewNote, UpdateDb } = require('../../lib/notes');
 const { v4: uuidv4 } = require('uuid');
 const { notes } = require('../../db/db.json');
